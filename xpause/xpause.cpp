@@ -2,7 +2,7 @@
 #include "pluginsdk\_plugins.h"
 
 #ifndef DLL_EXPORT
-#define DLL_EXPORT __declspec(dllexport)
+#define DLL_EXPORT extern "C" __declspec(dllexport)
 #endif //DLL_EXPORT
 
 #define plugin_name "X-Pause"
